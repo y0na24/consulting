@@ -27,12 +27,12 @@ export default function Home() {
     return (
     <div className="min-h-screen bg-white text-black">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-3 xs:px-4 sm:px-6 lg:px-8 pb-8 xs:pb-8 sm:pb-0">
+      <section className="relative h-full md:min-h-screen flex items-start sm:items-center justify-center px-3 xs:px-4 sm:px-6 lg:px-8 pb-8 xs:pb-8 sm:pb-0">
         <div className="max-w-4xl mx-auto text-center">
           <div
             className="transition-all duration-1000 opacity-100 translate-y-0"
           >
-            <Badge className="mb-4 xs:mb-6 bg-black text-white hover:bg-gray-800 text-xs xs:text-sm px-3 xs:px-4 py-2">
+            <Badge className="mb-4 mt-4 xs:mb-6 bg-black text-white hover:bg-gray-800 text-xs xs:text-sm px-3 xs:px-4 py-2">
               Senior Frontend Developer • 100+ собеседований
             </Badge>
 
@@ -556,7 +556,7 @@ export default function Home() {
                 size="lg"
                 className="bg-white hover:bg-gray-100 text-black px-4 xs:px-8 py-4 xs:py-6 text-base xs:text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
-                Буткемп &quot;Грокаем Frontend&quot;<span className="hidden xs:inline"> - 39,990₽</span>
+                Буткемп &quot;Грокаем Frontend&quot;<span className="hidden sm:inline"> - 39,990₽</span>
                 <ArrowRight className="ml-2 h-4 w-4 xs:h-5 xs:w-5" />
               </Button>
             </a>
