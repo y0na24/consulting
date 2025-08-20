@@ -27,16 +27,16 @@ export default function Home() {
     return (
     <div className="min-h-screen bg-white text-black">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-screen flex items-center justify-center px-3 xs:px-4 sm:px-6 lg:px-8 pb-8 xs:pb-8 sm:pb-0">
         <div className="max-w-4xl mx-auto text-center">
           <div
             className="transition-all duration-1000 opacity-100 translate-y-0"
           >
-            <Badge className="mb-6 bg-black text-white hover:bg-gray-800 text-sm px-4 py-2">
+            <Badge className="mb-4 xs:mb-6 bg-black text-white hover:bg-gray-800 text-xs xs:text-sm px-3 xs:px-4 py-2">
               Senior Frontend Developer • 100+ собеседований
             </Badge>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+            <h1 className="text-2xl xs:text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 xs:mb-8 leading-tight">
               Получи оффер в{" "}
               <span className="bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
                 топовую IT-компанию
@@ -44,30 +44,30 @@ export default function Home() {
               за 5 недель
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base xs:text-xl sm:text-2xl text-gray-600 mb-8 xs:mb-12 leading-relaxed max-w-3xl mx-auto px-2 xs:px-0">
               Прокачаю твои навыки собеседований и помогу получить оффер на
               <strong className="text-black"> 350-400к рублей</strong> в месяц.
               Работал в Сбербанке и ВТБ, провел 100+ интервью.
             </p>
 
-            <div className="flex flex-col  gap-6 justify-center mb-16">
+            <div className="flex flex-col gap-4 xs:gap-6 justify-center mb-12 xs:mb-16">
               <a
-                href="https://t.me/y0na24"
+                href="https://t.me/m/85yX4E3RNzEy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
               >
                 <Button
                   size="lg"
-                  className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                  className="bg-black hover:bg-gray-800 text-white px-4 xs:px-8 py-4 xs:py-6 text-base xs:text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
                 >
-                  Попасть в буткемп за 39,990₽
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Попасть на буткемп за 39,990₽
+                  <ArrowRight className="ml-2 h-4 w-4 xs:h-5 xs:w-5" />
                 </Button>
               </a>
 
               <a
-                href="https://t.me/y0na24"
+                href="https://t.me/m/j2wkDTpOZWRi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
@@ -75,7 +75,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200"
+                  className="border-2 border-black text-black hover:bg-black hover:text-white px-4 xs:px-8 py-4 xs:py-6 text-base xs:text-lg font-semibold rounded-lg transition-all duration-200"
                 >
                   Консультация за 5,990₽
                 </Button>
@@ -85,26 +85,26 @@ export default function Home() {
 
           {/* Stats */}
           <div
-            className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 opacity-100 translate-y-0"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 xs:gap-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 opacity-100 translate-y-0"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-black mb-2">100+</div>
-              <div className="text-gray-600">Собеседований проведено</div>
+              <div className="text-2xl xs:text-3xl font-bold text-black mb-2">100+</div>
+              <div className="text-sm xs:text-base text-gray-600">Собеседований проведено</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-black mb-2">50+</div>
-              <div className="text-gray-600">Консультаций проведено</div>
+              <div className="text-2xl xs:text-3xl font-bold text-black mb-2">50+</div>
+              <div className="text-sm xs:text-base text-gray-600">Консультаций проведено</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-black mb-2">400k₽</div>
-              <div className="text-gray-600">Максимальная зарплата</div>
+              <div className="text-2xl xs:text-3xl font-bold text-black mb-2">400k₽</div>
+              <div className="text-sm xs:text-base text-gray-600">Максимальная зарплата</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Me Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-12 xs:py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-black mb-6">
@@ -184,7 +184,7 @@ export default function Home() {
       </section>
 
       {/* Bootcamp Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 xs:py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-black text-white text-sm px-4 py-2">
@@ -268,49 +268,49 @@ export default function Home() {
               </div>
             </div>
 
-            <Card className="p-8 border-2 border-black">
-              <CardHeader className="text-center p-0 mb-6">
-                <CardTitle className="text-3xl font-bold text-black">
+            <Card className="p-4 xs:p-6 sm:p-8 border-2 border-black">
+              <CardHeader className="text-center p-0 mb-4 xs:mb-6">
+                <CardTitle className="text-2xl xs:text-3xl font-bold text-black">
                   39,990₽
                 </CardTitle>
-                <CardDescription className="text-lg text-gray-600">
+                <CardDescription className="text-base xs:text-lg text-gray-600">
                   Можно разделить на 2 платежа
                 </CardDescription>
               </CardHeader>
 
               <CardContent className="p-0">
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">
+                <div className="space-y-3 xs:space-y-4 mb-6 xs:mb-8">
+                  <div className="flex items-start gap-2 xs:gap-3">
+                    <CheckCircle className="h-4 w-4 xs:h-5 xs:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm xs:text-base text-gray-700">
                       5 недель индивидуальной работы
                     </span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">
+                  <div className="flex items-start gap-2 xs:gap-3">
+                    <CheckCircle className="h-4 w-4 xs:h-5 xs:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm xs:text-base text-gray-700">
                       Мок-собеседования с фидбеком
                     </span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">Live-кодинг сессии</span>
+                  <div className="flex items-start gap-2 xs:gap-3">
+                    <CheckCircle className="h-4 w-4 xs:h-5 xs:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm xs:text-base text-gray-700">Live-кодинг сессии</span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">
+                  <div className="flex items-start gap-2 xs:gap-3">
+                    <CheckCircle className="h-4 w-4 xs:h-5 xs:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm xs:text-base text-gray-700">
                       Материалы для подготовки
                     </span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">
+                  <div className="flex items-start gap-2 xs:gap-3">
+                    <CheckCircle className="h-4 w-4 xs:h-5 xs:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm xs:text-base text-gray-700">
                       Помощь с резюме и поиском
                     </span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">
+                  <div className="flex items-start gap-2 xs:gap-3">
+                    <CheckCircle className="h-4 w-4 xs:h-5 xs:w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm xs:text-base text-gray-700">
                       Поддержка в течение курса
                     </span>
                   </div>
@@ -324,10 +324,10 @@ export default function Home() {
                 >
                   <Button
                     size="lg"
-                    className="w-full bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-white py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                    className="w-full bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-white py-4 xs:py-6 text-base xs:text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
                   >
                     Записаться на буткемп
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4 xs:h-5 xs:w-5" />
                   </Button>
                 </a>
               </CardContent>
@@ -337,7 +337,7 @@ export default function Home() {
       </section>
 
       {/* Consultations Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-12 xs:py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-black mb-6">
@@ -393,22 +393,22 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <div className="bg-white p-8 rounded-2xl shadow-lg inline-block border-2 border-black">
-              <div className="text-4xl font-bold text-black mb-4">5,990₽</div>
-              <div className="text-gray-600 mb-6">за 1 час консультации</div>
+            <div className="bg-white p-4 xs:p-6 sm:p-8 rounded-2xl shadow-lg w-full max-w-sm xs:max-w-md mx-auto border-2 border-black">
+              <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-black mb-3 xs:mb-4">5,990₽</div>
+              <div className="text-gray-600 mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg">за 1 час консультации</div>
 
               <a
-                href="https://t.me/y0na24"
+                href="https://t.me/m/j2wkDTpOZWRi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full"
+                className="block w-full"
               >
                 <Button
                   size="lg"
-                  className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                  className="w-full bg-black hover:bg-gray-800 text-white px-4 xs:px-6 sm:px-8 py-4 xs:py-5 sm:py-6 text-sm xs:text-base sm:text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
                 >
                   Записаться на консультацию
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 xs:h-5 xs:w-5" />
                 </Button>
               </a>
             </div>
@@ -417,7 +417,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 xs:py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-black mb-6">
@@ -535,29 +535,29 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-5xl font-bold mb-8">
+      <section className="py-12 xs:py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black text-white">
+        <div className="max-w-4xl mx-auto text-center px-3 xs:px-0">
+          <h2 className="text-2xl xs:text-3xl sm:text-5xl font-bold mb-6 xs:mb-8">
             Готов изменить свою карьеру?
           </h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-base xs:text-xl text-gray-300 mb-8 xs:mb-12 max-w-2xl mx-auto px-2 xs:px-0">
             Не откладывай на завтра то, что может изменить твою жизнь уже
             сегодня. Первый шаг к оффер мечты начинается здесь.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 xs:gap-6 justify-center">
             <a
-              href="https://t.me/y0na24"
+              href="https://t.me/m/85yX4E3RNzEy"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full"
             >
               <Button
                 size="lg"
-                className="bg-white hover:bg-gray-100 text-black px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                className="bg-white hover:bg-gray-100 text-black px-4 xs:px-8 py-4 xs:py-6 text-base xs:text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
-                Буткемп &quot;Грокаем Frontend&quot; - 39,990₽
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Буткемп &quot;Грокаем Frontend&quot;<span className="hidden xs:inline"> - 39,990₽</span>
+                <ArrowRight className="ml-2 h-4 w-4 xs:h-5 xs:w-5" />
               </Button>
             </a>
           </div>
