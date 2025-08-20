@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -26,23 +23,13 @@ import {
 } from "lucide-react";
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  const handleClick = () => {
-    window.location.replace("https://t.me/y0na24");
-  };
-
-  return (
+    return (
     <div className="min-h-screen bg-white text-black">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div
-            className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className="transition-all duration-1000 opacity-100 translate-y-0"
           >
             <Badge className="mb-6 bg-black text-white hover:bg-gray-800 text-sm px-4 py-2">
               Senior Frontend Developer • 100+ собеседований
@@ -62,30 +49,42 @@ export default function Home() {
               Работал в Сбербанке и ВТБ, провел 100+ интервью.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <Button
-                onClick={handleClick}
-                size="lg"
-                className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+            <div className="flex flex-col  gap-6 justify-center mb-16">
+              <a
+                href="https://t.me/y0na24"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
               >
-                Попасть в буткемп за 39,990₽
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                >
+                  Попасть в буткемп за 39,990₽
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
 
-              <Button
-                onClick={handleClick}
-                variant="outline"
-                size="lg"
-                className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200"
+              <a
+                href="https://t.me/y0na24"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
               >
-                Консультация за 5,990₽
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200"
+                >
+                  Консультация за 5,990₽
+                </Button>
+              </a>
             </div>
           </div>
 
           {/* Stats */}
           <div
-            className={`grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 opacity-100 translate-y-0"
           >
             <div className="text-center">
               <div className="text-3xl font-bold text-black mb-2">100+</div>
@@ -121,7 +120,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Меня зовут Матвей Клёнов, я - Senior Frontend-разработчик.
-                  Занимаюсь Frontend'ом уже более 3-х лёт. Работал в Сбербанке и
+                  Занимаюсь Frontend&apos;ом уже более 3-х лёт. Работал в Сбербанке и
                   ВТБ. В Сбере состоял в группе интервьюеров, что дало мне
                   большой опыт в проведении собеседований на Middle и Senior
                   позиции.
@@ -182,7 +181,7 @@ export default function Home() {
               ФЛАГМАНСКИЙ ПРОДУКТ
             </Badge>
             <h2 className="text-3xl sm:text-5xl font-bold text-black mb-6">
-              "Грокаем Frontend-собеседования"
+              &quot;Грокаем Frontend-собеседования&quot;
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Индивидуальная подготовка к собеседованиям в топовые IT-компании.
@@ -307,14 +306,20 @@ export default function Home() {
                   </div>
                 </div>
 
-                <Button
-                  onClick={handleClick}
-                  size="lg"
-                  className="w-full bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-white py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                <a
+                  href="https://t.me/y0na24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
                 >
-                  Записаться на буткемп
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                  <Button
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-black to-gray-800 hover:from-gray-800 hover:to-black text-white py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                  >
+                    Записаться на буткемп
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -382,14 +387,20 @@ export default function Home() {
               <div className="text-4xl font-bold text-black mb-4">5,990₽</div>
               <div className="text-gray-600 mb-6">за 1 час консультации</div>
 
-              <Button
-                onClick={handleClick}
-                size="lg"
-                className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+              <a
+                href="https://t.me/y0na24"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
               >
-                Записаться на консультацию
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+                >
+                  Записаться на консультацию
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -416,11 +427,11 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "Обратился к Матвею за консультацией по вопросу роста с мидла до
+                &quot;Обратился к Матвею за консультацией по вопросу роста с мидла до
                 синьора. Удивила вовлеченность в процесс менторства и
                 индивидуальный подход. По рекомендации от Матвея попал на собес
                 в WB. Получил очень важную информацию для дальнейшего пути
-                развития. Спасибо!"
+                развития. Спасибо!&quot;
               </p>
             </Card>
 
@@ -434,10 +445,10 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "Матвей провёл хорошую консультацию по построению архитектуры,
+                &quot;Матвей провёл хорошую консультацию по построению архитектуры,
                 стало всё гораздо понятнее. Рассмотрели реальные примеры с моей
                 работы, разобрали, нашли моменты для улучшения. Вместо 1 часа,
-                просидели 2.5, за что огромное спасибо!"
+                просидели 2.5, за что огромное спасибо!&quot;
               </p>
             </Card>
 
@@ -451,10 +462,10 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "Матвей круто раскидал по feature based архитектуре, а также как
+                &quot;Матвей круто раскидал по feature based архитектуре, а также как
                 применять DI в реальных проектах. Наконец-то понял, что это и
                 зачем на практике! Получил суперский гайд по web3. Чел глубоко
-                шарит во фронте и не только 💪"
+                шарит во фронте и не только 💪&quot;
               </p>
             </Card>
 
@@ -468,10 +479,10 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "Недавно проходила моковый собес у Матвея, было очень круто!
+                &quot;Недавно проходила моковый собес у Матвея, было очень круто!
                 Вопросы как на реальных собеседованиях. После собеса подробно
                 объяснил все затруднившие моменты, скинул много ссылок с
-                информацией. Всем довольна, Матвею еще раз спасибо!"
+                информацией. Всем довольна, Матвею еще раз спасибо!&quot;
               </p>
             </Card>
 
@@ -485,11 +496,11 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "Брал у Матвея консультацию по FSD и стейт-менеджменту. Матвей
+                &quot;Брал у Матвея консультацию по FSD и стейт-менеджменту. Матвей
                 объяснил основные концепции FSD, после чего все стало в разы
                 понятнее. Рассказал подходы к разработке на разных
                 стейт-менеджерах. Всё сопровождалось визуализацией в excalidraw.
-                Всем рекомендую!"
+                Всем рекомендую!&quot;
               </p>
             </Card>
 
@@ -525,14 +536,20 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button
-              onClick={handleClick}
-              size="lg"
-              className="bg-white hover:bg-gray-100 text-black px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+            <a
+              href="https://t.me/y0na24"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
             >
-              Буткемп "Грокаем Frontend" - 39,990₽
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-white hover:bg-gray-100 text-black px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+              >
+                Буткемп &quot;Грокаем Frontend&quot; - 39,990₽
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
