@@ -21,6 +21,7 @@ import {
   Zap,
   Award,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -115,6 +116,15 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-8">
+                <div className="mb-4 relative w-32 h-32">
+                  <Image
+                    src="/me.jpg"
+                    alt="Матвей Клёнов"
+                    fill
+                    className="rounded-full border-4 border-black object-cover"
+                    priority
+                  />
+                </div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   Матвей Клёнов
                 </h3>
